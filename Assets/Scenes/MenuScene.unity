@@ -98,8 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: e3d527f1208e8cc48b111bbeca2a1f52,
-    type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: e3d527f1208e8cc48b111bbeca2a1f52, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -260,9 +259,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c42356c8b9764748b1f2423d2fcb524, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicToggleButton: {fileID: 631775699}
-  audioOn: {fileID: 21300000, guid: 4048cb75f92eb044ebb094a081bc34b3, type: 3}
-  audioOff: {fileID: 21300000, guid: 03ba70cd36988174e97bd8bb978446cd, type: 3}
 --- !u!114 &631775699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -691,8 +687,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 40, y: -120}
-  m_SizeDelta: {x: 600, y: 50}
+  m_AnchoredPosition: {x: 20, y: -120}
+  m_SizeDelta: {x: 700, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1553183419
 MonoBehaviour:
@@ -741,8 +737,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 85
-  m_fontSizeBase: 85
+  m_fontSize: 110
+  m_fontSizeBase: 110
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -926,7 +922,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f60ec380e4449f54085425002b1dc079, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 0}
 --- !u!4 &1882009686
 Transform:
   m_ObjectHideFlags: 0
@@ -1206,89 +1201,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3c8aaa2931bea194c9b28db7ab1bb894, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &2049911660
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2049911663}
-  - component: {fileID: 2049911662}
-  - component: {fileID: 2049911661}
-  - component: {fileID: 2049911665}
-  - component: {fileID: 2049911664}
-  m_Layer: 0
-  m_Name: AdsObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2049911661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2049911660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d99e48a3f7a7d2e459b632fe159c243b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2049911662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2049911660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fbd85ad391d82c469ab12abbf9ffd45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &2049911663
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2049911660}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2049911664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2049911660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7957c015750c704887d59dd4dbec010, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ScoreText2: {fileID: 0}
---- !u!114 &2049911665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2049911660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 707c3fbbbd09cd042bf916f8cc62717d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2092565575
