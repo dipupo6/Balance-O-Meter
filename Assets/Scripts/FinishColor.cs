@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FinishColor : MonoBehaviour
 {
-    public MeshRenderer sr;
+    public Material sr;
     public string currentColor;
 	public Color colorMagenta;
 	public Color colorPurple;
@@ -30,19 +30,19 @@ public class FinishColor : MonoBehaviour
 		{
 			case 0:
 				currentColor = "Magenta";
-				sr.material.color = colorMagenta;
+				sr.color = colorMagenta;
 				break;
 			case 1:
 				currentColor = "Purple";
-				sr.material.color = colorPurple;
+				sr.color = colorPurple;
 				break;
             case 2:
 				currentColor = "Pink";
-				sr.material.color = colorPink;
+				sr.color = colorPink;
 				break; 
 	        case 3:
 				currentColor = "Brown";
-				sr.material.color = colorBrown;
+				sr.color = colorBrown;
 				break; 			 
 		}
 	}
