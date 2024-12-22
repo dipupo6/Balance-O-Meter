@@ -5,7 +5,6 @@ public class CameraFollow : MonoBehaviour {
     // The Target
     /*public Transform target;*/
     float spawnPos = 0.0004f;
-    public float interval = 2f;
 
     void Start()
     {

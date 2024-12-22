@@ -4,16 +4,12 @@ using UnityEngine;
 
 public class FinishColor : MonoBehaviour
 {
-    public Material sr;
-    public string currentColor;
-	public Color colorMagenta;
-	public Color colorPurple;
-    public Color colorPink;
-	public Color colorBrown;
+
+    
     // Start is called before the first frame update
     void Start()
     {
-        SetRandomColor();
+		GetComponent<Renderer>().material.color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
     }
 
     // Update is called once per frame
@@ -21,29 +17,4 @@ public class FinishColor : MonoBehaviour
     {
         
     }
-
-    void SetRandomColor ()
-	{
-		int index = Random.Range(0, 4);
-
-		switch (index)
-		{
-			case 0:
-				currentColor = "Magenta";
-				sr.color = colorMagenta;
-				break;
-			case 1:
-				currentColor = "Purple";
-				sr.color = colorPurple;
-				break;
-            case 2:
-				currentColor = "Pink";
-				sr.color = colorPink;
-				break; 
-	        case 3:
-				currentColor = "Brown";
-				sr.color = colorBrown;
-				break; 			 
-		}
-	}
 }
