@@ -8,12 +8,13 @@ public class CloudSpawn : MonoBehaviour
     public GameObject Cloud;
     float randX;
     float randZ;
+    float randSpawn;
     Vector3 whereToSpawn;
     public int sTime = 2;
     public float spawnRate = 1f;
     float nextSpawn = 0f;
     /*float moveSpawn = 0.2f;*/
-    float spawnPos = 0.1f;
+    public Transform Camera;
 
     // Start is called before the first frame update
     void Start()
@@ -22,8 +23,9 @@ public class CloudSpawn : MonoBehaviour
     } 
 
     void Update(){
+        randSpawn = Random.Range(4f, 8f);
         transform.position = new Vector3(transform.position.x,
-                                         transform.position.y + spawnPos,
+                                         Camera.position.y + randSpawn,
                                          transform.position.z);
     }
 
@@ -32,17 +34,9 @@ public class CloudSpawn : MonoBehaviour
     {
         if (Time.time > nextSpawn) {
             nextSpawn = Time.time + spawnRate;
-            /*if (Score.score < 5) 
-            {
-                randY = Random.Range (30f, 35f);
-            }
-            if (Score.score > 5) 
-            {
-                randY = Random.Range (25f, 40f);
-            }*/
-            randX = Random.Range (-6f, 6f);
+            //randX = Random.Range (-6f, 6f);
             randZ = Random.Range (8f, 21f);
-            whereToSpawn = new Vector3 (randX, transform.position.y, randZ);
+            whereToSpawn = new Vector3 (transform.position.x, transform.position.y, randZ);
 
             Instantiate (Cloud, whereToSpawn, Quaternion.identity);                                       
         }
